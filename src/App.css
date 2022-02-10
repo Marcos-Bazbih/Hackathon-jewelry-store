@@ -1,0 +1,18 @@
+.App{
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "SideBar main main  main"
+    "SideBar main main  main"
+    "Footer Footer Footer Footer";
+    
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: 10% 80%;
+    grid-template-columns: 15%;
+  }
+  .main{
+    border:2px blueviolet solid;
+    grid-area: main;
+  }
+  
