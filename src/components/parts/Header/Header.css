@@ -2,5 +2,13 @@
     border: 1px solid blue;
     grid-area: header;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: azure;
   }
-  
+  .Header img{
+    width: 15%;
+    height:100%;
+
+  }
