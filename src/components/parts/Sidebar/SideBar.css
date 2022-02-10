@@ -1,6 +1,7 @@
-.SideBar{
+
+.SideLinks{
     border: 1px solid blue;
-    grid-area: NavBar;
+    grid-area: SideBar;
     display: flex;
     flex-direction: column;
     justify-content: baseline;
