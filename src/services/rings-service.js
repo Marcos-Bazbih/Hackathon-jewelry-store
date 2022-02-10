@@ -4,7 +4,6 @@ export const GetAllRings = async () => {
     try {
         return await fetch(`${BASIC_API}`)
             .then(res => res.json())
-            .then(res => console.log(res))
             .catch(err => console.error(err))
     } catch (err) {
         console.log(err);
