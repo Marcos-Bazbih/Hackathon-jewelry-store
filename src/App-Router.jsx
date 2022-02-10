@@ -17,7 +17,7 @@ const AppRouter = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/Cart" element={<Cart />} />
-        <Route exact path="/" element={<Earring />} />
+        <Route exact path="/earring" element={<Earring />} />
         <Route exact path="/Rings" element={<Rings />} />
         <Route exact path="/Necklaces" element={<Necklaces />} />
         <Route exact path="/Watches" element={<Watches />} />
