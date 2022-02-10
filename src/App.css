@@ -3,8 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: url("https://cdn.pixabay.com/photo/2016/11/29/03/07/crown-1866986_1280.jpg");
+    background-position: 5%;
+}
 html{
   font-size: 62.5%;
+}
+.bg-img{
+    width: 80%;
+
 }
 .App{
     display: grid;
@@ -14,22 +22,22 @@ html{
     "Footer Footer Footer Footer";
     width: 100vw;
     min-height: 100vh;
-    grid-template-rows: 10vh auto 10vh;
+    grid-template-rows: 10vh 80vh 10vh;
     grid-template-columns: 15% 85%;
   }
   .main{
     width: 100%;
     height: 100%;
-    border:2px blueviolet solid;
     grid-area: main;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    overflow: auto;
   }
   
 
   .card {
-    background: var(--mainLightBlue);
+    background: white;
     text-align: center;
     width: 28%;
     height: 65vh;
@@ -71,7 +79,6 @@ html{
 }
 
 .card-info-header {
-    font-family: var(--headersFont);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,7 +89,6 @@ html{
     }
 
 .card-info-footer {
-    font-family: var(--mainFont);
     width: 90%;
     margin: auto;
     display: flex;
