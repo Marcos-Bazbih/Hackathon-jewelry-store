@@ -1,20 +1,19 @@
-import { createContext,useEffect,useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { GetData } from "../services/earrings-service";
 
-export const Earrings=createContext();
+export const EarringsContext = createContext();
 
+const EarringsContextProvider = ({ children }) => {
 
-const EarringsProvider=({children})=>{
+    const [earrings, setEarrings] = useState([]);
 
-    const[earrings,setEarrings]=useState([]);
-
-    useEffect(()=>{
-        GetData().then((res)=>setEarrings(res))
-    },[])
-return (
-<Earrings.Provider value={{earrings,setEarrings}}>
-    {children}
-</Earrings.Provider>
-)
+    useEffect(() => {
+        GetData().then((res) => setEarrings(res))
+    }, [])
+    return (
+        <EarringsContext.Provider value={{ earrings, setEarrings }}>
+            {children}
+        </EarringsContext.Provider>
+    )
 }
-export default EarringsProvider;
+export default EarringsContextProvider;
