@@ -4,7 +4,7 @@ function Earring() {
     
     return (
       <div className=" main Earring">
-        <h1> Necklaces!</h1>
+        <h1> Earring!</h1>
       </div>
     );
   }
