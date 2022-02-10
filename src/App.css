@@ -3,20 +3,94 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+  font-size: 62.5%;
+}
 .App{
     display: grid;
     grid-template-areas: 
     "header header header header"
     "SideBar main main  main"
     "Footer Footer Footer Footer";
-    
     width: 100vw;
-    height: 100vh;
-    grid-template-rows: 10% 80% 10%;
+    min-height: 100vh;
+    grid-template-rows: 10vh auto 10vh;
     grid-template-columns: 15% 85%;
   }
   .main{
+    width: 100%;
+    height: 100%;
     border:2px blueviolet solid;
     grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   
+
+  .card {
+    background: var(--mainLightBlue);
+    text-align: center;
+    width: 28%;
+    height: 65vh;
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px double black;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 5vh;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+.card-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20%;
+}
+
+.card-info-header, .card-info-footer {
+    width: 100%;
+    height: 50%;
+}
+
+.card-info-header {
+    font-family: var(--headersFont);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .card-info-header p {
+        font-size: 2rem;
+    }
+
+.card-info-footer {
+    font-family: var(--mainFont);
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+    .card-info-footer > h2 {
+        width: 30%;
+    }

@@ -6,11 +6,11 @@ import {  Link } from "react-router-dom";
     return (
       <div className="  SideBar">
        <nav className="SideLinks"><button><Link to="/">Home</Link></button>
-      <button><Link to="/Rings">Rings</Link></button>
-      <button><Link to="/Earrings">Earrings</Link></button>
-      <button><Link to="/Watches">Watches</Link></button>
-      <button><Link to="/Necklaces">Necklaces</Link></button>
-      <button><Link to="/Cart">Cart</Link></button>
+      <button><Link to="/rings">Rings</Link></button>
+      <button><Link to="/earrings">Earrings</Link></button>
+      <button><Link to="/watches">Watches</Link></button>
+      <button><Link to="/necklaces">Necklaces</Link></button>
+      <button><Link to="/cart">Cart</Link></button>
       </nav>
       </div>
     );

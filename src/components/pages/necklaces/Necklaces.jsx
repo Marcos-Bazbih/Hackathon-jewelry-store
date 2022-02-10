@@ -1,11 +1,18 @@
-import React from "react";
+import { useContext } from "react";
+import { NecklacesContext } from "../../../contexts/necklaces-context";
+import NecklacesCards from "../../parts/neckless-cards/necklessCards";
 
 function Necklaces() {
-    
-    return (
-      <div className=" main Necklaces">
-        <h1> Necklaces!</h1>
-      </div>
-    );
+  const { necklaces } = useContext(NecklacesContext);
+
+  return (
+    <div className=" main Rings">
+      {
+        necklaces.map((item) =>
+          <NecklacesCards item={item} />
+        )
+      }
+    </div>
+  );
   }
   export default Necklaces;
