@@ -1,6 +1,7 @@
 import React from "react";
 import "./SideBar.css"
 import {  Link } from "react-router-dom";
+
  const SideBar=()=> {
     return (
       <div className="  SideBar">
@@ -9,6 +10,7 @@ import {  Link } from "react-router-dom";
       <button><Link to="/Earrings">Earrings</Link></button>
       <button><Link to="/Watches">Watches</Link></button>
       <button><Link to="/Necklaces">Necklaces</Link></button>
+      <button><Link to="/Cart">Cart</Link></button>
       </nav>
       </div>
     );
