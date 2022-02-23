@@ -11,6 +11,7 @@ body{
     background: red;
 }
 html{
+  font-weight: 900;
   font-size: 62.5%;
 }
 .bg-img{
