@@ -17,7 +17,9 @@ function App() {
           </EarringsContextProvider>
         </WatchesContextProvider>
       </RingsContextProvider>
+      <h1>matan</h1>
     </div>
+    
   );
 }
 
