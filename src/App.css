@@ -6,6 +6,7 @@
 body{
     background: url("https://cdn.pixabay.com/photo/2016/11/29/03/07/crown-1866986_1280.jpg");
     background-position: 5%;
+    background-color: aqua;
 }
 html{
   font-size: 62.5%;
